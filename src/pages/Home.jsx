@@ -38,7 +38,7 @@ function Home() {
               rem rerum quo eveniet ducimus! Cumque voluptatem quisquam alias
               voluptatum tempora nulla autem suscipit. Necessitatibus quos neque
               veritatis corrupti possimus ea aliquam. Modi aliquid dolor sint
-              architecto, voluptatibus ex aspernatur!
+              architecto, voluptatibus forget your ex !
             </p>
           </div>
           <div className="">

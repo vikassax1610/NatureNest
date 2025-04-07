@@ -48,6 +48,22 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="flex items-start w-full justify-between pl-16 pr-8 mt-8 font-serif">
+        <h1 className="text-5xl w-1/2 text-red-500 text-shadow-lg font-bold">
+          Your next favorite <br />
+          place awaits
+        </h1>
+        <div className="">
+          <p className="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            suscipit quod <br /> odit? Sint  excepturi laudantium inventore maiores
+            eligendi eos earum.
+          </p>
+          <button className="mt-2 shadow-xl text-lg bg-black text-white px-8 py-1 rounded-xl tracking-wider hover:bg-white hover:text-black hover:border transition duration-300 ease-in-out">
+            Save all
+          </button>
+        </div>
+      </div>
     </>
   );
 }

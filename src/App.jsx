@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 function App() {
   return (
     <>
-      <div className="h-screen w-[100vw]  ">
+      <div className=" ">
         <Home />
       </div>
     </>

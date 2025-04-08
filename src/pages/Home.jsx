@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import menu from "/icons/menu.svg";
 import x from "/icons/x.svg";
+import p1 from "/gallery/p1.jpg";
+import p2 from "/gallery/p2.jpg";
+import ProgressBar from "../components/ProgressBar";
+import { ChevronRight, ChevronLeft, ChevronsLeft } from "lucide-react";
 function Home() {
   const [open, setOpen] = useState(false);
   const navItems = ["Classes", "Journey", "Club", "About", "Contact"];
@@ -68,13 +72,82 @@ function Home() {
             </p>
           </div>
           <div className="">
-            <button className=" shadow-xl md:mt-[10rem] mt-[2rem] text-lg bg-white text-black px-8 py-2 rounded-xl tracking-wider hover:bg-black hover:text-white transition duration-300 ease-in-out">
+            <button className="flex items-center gap-2 shadow-xl md:mt-[10rem] mt-[2rem] text-lg bg-white text-black px-8 py-2 rounded-xl tracking-wider hover:bg-black hover:text-white transition duration-300 ease-in-out">
               Explore Now
+              <span className="rotate-180 ">
+                <ChevronsLeft />
+              </span>
             </button>
           </div>
         </div>
       </div>
-      <div className="flex md:items-start md:flex-row  pl-1 pr-1 flex-col  w-full md:justify-between md:pl-16 md:pr-8 mt-4 md:mt-8 font-serif">
+      <div className="w-full grid md:grid-flow-col md:grid-cols-3  grid-flow-row grid-row-3 gap-4 px-4 pt-4 md:pl-20">
+        <h1 className="w-32 h-8 text-lg border text-gray-600 border-gray-500 rounded-2xl px-4">
+          /About us
+        </h1>
+        <div className="">
+          <h1 className="md:text-6xl text-xl font-helveticaBold">
+            What's so special About this?
+          </h1>
+          <p className="md:text-lg mt-2 text-gray-800">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+            incidunt quod ipsam labore quisquam natus laboriosam error, placeat
+            modi sint!
+          </p>
+        </div>
+        <button className="w-52 flex items-center gap-2 md:ml-[13.2rem] shadow-xl md:mt-[14rem] text-lg hover:bg-white hover:text-black px-8 py-2 md:py-0 rounded-xl tracking-wider bg-black text-white transition duration-300 ease-in-out">
+          Learn More!{" "}
+          <span className="rotate-180 ">
+            <ChevronsLeft />
+          </span>
+        </button>
+      </div>
+      <div className="md:px-20 px-4 w-full md:mt-8 mt-4 flex md:flex-row flex-col gap-4 md:gap-16">
+        <div className="border border-gray-400 w-full md:w-1/2 rounded-lg ">
+          <div className=" flex items-start md:flex-row flex-col-reverse   justify-between px-4 pt-4">
+            <img
+              src={p1}
+              alt=""
+              className="md:w-[18rem] md:h-[12rem] rounded-lg"
+            />
+            <h1 className="text-5xl text-gray-900  font-bold font-sans pb-4 md:pb-0">
+              01
+            </h1>
+          </div>
+          <p className="mt-4 text-3xl tracking-wider font-sans pb-2 px-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, vero!
+          </p>
+        </div>
+        <div className="border border-gray-400 w-full md:w-1/2 rounded-lg ">
+          <div className=" flex items-start md:flex-row flex-col-reverse   justify-between px-4 pt-4">
+            <img
+              src={p2}
+              alt=""
+              className="md:w-[18rem] md:h-[12rem] rounded-lg"
+            />
+            <h1 className="text-5xl text-gray-900  font-bold font-sans pb-4 md:pb-0">
+              02
+            </h1>
+          </div>
+          <p className="mt-4 text-3xl tracking-wider font-sans pb-2 px-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, vero!
+          </p>
+        </div>
+      </div>
+      <div className="w-full px-20 pt-8 md:flex  hidden md:block items-center justify-between">
+        <div className="w-1/2">
+          <ProgressBar value={50} />
+        </div>
+        <div className="flex items-center gap-4">
+          <button className="focus:bg-white focus:text-black border shadow-xl rounded-full p-2 tracking-wider bg-black text-white transition duration-300 ease-in-out">
+            <ChevronLeft />
+          </button>
+          <button className="focus:bg-white focus:text-black border shadow-xl rounded-full p-2 tracking-wider bg-black text-white transition duration-300 ease-in-out">
+            <ChevronRight />
+          </button>
+        </div>
+      </div>
+      {/* <div className="flex md:items-start md:flex-row  pl-1 pr-1 flex-col  w-full md:justify-between md:pl-16 md:pr-8 mt-4 md:mt-8 font-serif">
         <h1 className="text-5xl w-1/2 hidden md:block  text-gray-900 text-shadow-lg font-bold">
           Your next favorite <br />
           place awaits
@@ -93,8 +166,11 @@ function Home() {
             suscipit quod odit? Sint excepturi laudantium inventore maiores
             eligendi eos earum.
           </p>
-          <button className="mt-4 shadow-xl text-lg bg-black text-white px-8 py-1 rounded-xl tracking-wider hover:bg-white hover:text-black hover:border transition duration-300 ease-in-out">
-            Save all
+          <button className="mt-4 flex items-center gap-2 shadow-xl text-lg bg-black text-white px-8 py-1 rounded-xl tracking-wider hover:bg-white hover:text-black hover:border transition duration-300 ease-in-out">
+            See all
+            <span className="rotate-180 ">
+            <ChevronsLeft  />
+          </span>
           </button>
         </div>
       </div>
@@ -102,7 +178,7 @@ function Home() {
         <div className="bg-[url(/gallery/p1.jpg)] rounded-2xl w-[370px] h-[290px] md:w-[500px]  md:h-[300px] pl-8 bg-cover flex items-start flex-col justify-between">
           <button className="mt-4 shadow-xl text-lg  px-8 py-1 rounded-full tracking-wider bg-white text-black hover:border transition duration-300 ease-in-out">
             Explore
-          </button>     
+          </button>
           <h1 className="text-3xl text-semibold text-white">Japan</h1>
         </div>
         <div className="bg-[url(/gallery/p4.jpg)] rounded-2xl w-[370px] h-[290px] md:w-[500px]  md:h-[300px]  pl-8 bg-cover flex items-start flex-col justify-between">
@@ -123,7 +199,7 @@ function Home() {
           </button>
           <h1 className="text-3xl text-semibold text-white">Canada</h1>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -147,7 +147,7 @@ function Home() {
           </button>
         </div>
       </div>
-      {/* <div className="flex md:items-start md:flex-row  pl-1 pr-1 flex-col  w-full md:justify-between md:pl-16 md:pr-8 mt-4 md:mt-8 font-serif">
+      <div className="flex md:items-start md:flex-row  pl-1 pr-1 flex-col  w-full md:justify-between md:pl-16 md:pr-8 mt-4 md:mt-8 font-serif">
         <h1 className="text-5xl w-1/2 hidden md:block  text-gray-900 text-shadow-lg font-bold">
           Your next favorite <br />
           place awaits
@@ -199,7 +199,7 @@ function Home() {
           </button>
           <h1 className="text-3xl text-semibold text-white">Canada</h1>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }

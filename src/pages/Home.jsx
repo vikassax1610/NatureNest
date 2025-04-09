@@ -130,7 +130,7 @@ function Home() {
             </h1>
           </div>
           <p className="mt-4 text-3xl tracking-wider font-sans pb-2 px-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, vero!
+            Lorem ipsum dolor amet consectetur adipisicing elit. Quam, vero!
           </p>
         </div>
       </div>
@@ -169,8 +169,8 @@ function Home() {
           <button className="mt-4 flex items-center gap-2 shadow-xl text-lg bg-black text-white px-8 py-1 rounded-xl tracking-wider hover:bg-white hover:text-black hover:border transition duration-300 ease-in-out">
             See all
             <span className="rotate-180 ">
-            <ChevronsLeft  />
-          </span>
+              <ChevronsLeft />
+            </span>
           </button>
         </div>
       </div>
